@@ -1,0 +1,24 @@
+# SpringBootProject-MultipleDataBaseConfiguration
+
+ProjectDescriptions: 
+		      This project is Spring Boot Project.In this Project multiple dataBase is configured.
+		      Here I have been created many operations of CURD APIs for fetch data, inserting data and manipulating of data into the Data Base.
+		      In this project there are Two Tables i.e Employee table,User Table.
+		      
+		      Here I have configured different DataBase Configuration i.e. DbOneConfig and DbTwoConfig.
+		      At the time of run the Application All Data are seperatelly store in different DataBase Table and also Fetch From Different DataBase Table.
+
+		      In this project I have use MySQL Woekbench for Data Base and Testing purpose uses Postman Applications.
+
+	APIs Used :-
+		1. @PostMapping("/empStore") : Any Employee Details are stored inside Employee DataBase Table with some Condition checking using this API call.
+		
+		2. @PostMapping("/empStore") : Any User Details are stored inside User DataBase Table with some Condition checking using this API call.
+
+		3. @GetMapping("/allEmpShow") : All Employee Details are fetch from Employee DataBase Table with some Condition checking using this API call.
+
+		4. @GetMapping("/allUserShow") : All User Details are fetch from User DataBase Table with some Condition checking using this API call.
+
+		5. @GetMapping("/specificEmpShow/{empName}") :  Here passes the specific Employeer-Name as a parametter value with the Apis, if the specified Employeer-Name is exist inside the Employee Data Base then it will be shown.
+
+		6. @GetMapping("/specificUserShow/{userName}") :  Here passes the specific User-Name as a parametter value with the Apis, if the specified User-Name is exist inside the User Data Base then it will be shown.
